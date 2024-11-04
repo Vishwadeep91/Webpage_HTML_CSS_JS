@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body
+{ 
+   background-image: url(../images/key7.jpg); 
+   height: 90%;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-repeat: no-repeat;
+}
+.menu-bar
+{
+    text-align: center;
+}
+.menu-bar ul
+{
+    float:left;
+    display: inline-flex;
+    list-style: none;
+    color: #efeff3;
+}
+.menu-bar ul li
+{   
+    background-color: rgb(100, 49, 201);
+    width: 150PX;
+    margin: 15px;
+    padding: 5px;
+} 
+.menu-bar ul li a
+{
+    float: center;
+    text-decoration: none;
+    color: #f5f4f4;
+}
+.active, .menu-bar ul li:hover
+{
+    background-color: rgb(17, 17, 237);
+    transition: 5ms;
+    border-radius: 3px;
+}
+.menu-bar .fa
+{
+    margin-left: 8px;
+}
+.apply ul {   
+    margin-left: 400%;
+}
+.apply ul li
+{
+    float: right;
+    background-color: rgb(218, 27, 27);    
+}
+.slider {
+    position: relative;
+    width: 640px;
+    height: 360px;
+    overflow: hidden;
+    margin-top: 15%; 
+    margin-left: 25%;
+    padding-left: 5%;  
+}
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slider-video {
+    flex: 0 0 640px;
+}
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    margin-left: 9%;
+    margin-right: 11%;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+.img-logo{
+    width: 13%;
+    height: 17%; 
+    text-align: left; 
+    float: left;
+    margin-left: 4px;
+    margin-top: 3px;
+}
+.contact-button{
+    cursor: pointer;
+    border-radius: 4px;
+}
+ 
+        /* .slider {
+            position: relative;
+            width: 640px;
+            height: 360px;
+            overflow: hidden;
+            margin-top: 30%;
+        }
+        
+        .slider-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .slider-video {
+            flex: 0 0 640px;
+        }
+        
+        .slider-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .prev {
+            left: 0;
+        }
+        
+        .next {
+            right: 0;
+        } */
+    
+
+
+
+    
+
