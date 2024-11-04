@@ -1,0 +1,119 @@
+<html>
+<head>
+	<title>Web Design</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body oncontextmenu="return false">
+	<script> 
+		window.onload=function(){
+			alert("Welcome to webpage!")
+		}
+		function startClock() {			
+			clearInterval(window.dateTimeInterval);
+
+			window.dateTimeInterval = setInterval(function() {
+				document.getElementById('date_time_button').innerHTML = new Date();
+			}, 1000);
+		}
+	</script>
+
+	<!-- header section-->
+	<div class="menu-bar">
+		<a href=""><img  src="images/e.png" class="image-logo"></a>
+	     <ul>
+				<li class="active"><a href="#">HOME</a></li>
+				<li class="active"><a href="#">SOLUTIONS</a><i class="fa fa-cogs" aria-hidden="true"></i></li>
+				<li class="active"><a href="blogs.html">BLOGS</a><i class="fa fa-book" aria-hidden="true"></i></li>
+				<li class="active" ><a href="#">SUPPORT</a><i class="fa fa-envelope" aria-hidden="true"></i></li>
+				<li class="active"><a href="contact.html">CONTACT US </a></li>
+	    </ul>
+	</div>		
+	<a href="#abc" class="company-link">
+		<p class="company-heading">
+		StarShield
+		</p>
+	</a>
+
+	<!-- about section-->
+	<section class="container" id="abc">
+		<div class="sailpoint">
+			<div class="sailpoint-img card-1"></div>
+			<P>StarShield's alliance with Sailpoint (NYSE: SAIL) a Visionary OEM in the space of Identity Governance helps us build 
+			   robust, scalable and innovative Identity Solutions. StarShield techno-functional team specializes in building top 
+			   class integrations with Complex ERPs, Native on-premise solutions as well as Cloud based vendors with sailpoint
+			</P>
+			<a href="https://www.sailpoint.com/">READ MORE</a>
+		</div>
+		<div class="sailpoint">
+			<div class="sailpoint-img card-2"></div>
+			<P>StarShield is honored to be a strategic Gold Partner of Cyber Ark, a pioneering Privileged Identity/Account Management 
+			   Solution. iSecure via its highly integrated and tech-savvy Center of Excellence has created impeccable industry relevant 
+			   scenarios to evangelize the solution and prove Return of Investment for the much needed InfoSec solution for most of the 
+			   large enterprises. 
+
+			</P>
+			<a href="https://www.cyberark.com/">READ MORE</a>
+		</div>
+		<div class="sailpoint">
+			<div class="sailpoint-img card-3"></div>
+			<P>StarShield is now partnered with Okta. iSecure implements impeccable Access Management solutions for various industries 
+		       using the world leader in Access Management, Okta. Our technical expertise, associated along with the understanding of 
+			   Identity based risks, helps in implementing the right Cyber Security solutions with respect to Access. Write to us, right 
+			   away to know further.</P>
+			<a href="https://www.okta.com/">READ MORE</a>
+		</div>
+		<div class="sailpoint">
+			<div class="sailpoint-img card-4"></div>
+			<P>StarShield is now partnered with RSA. iSecure via its highly integrated and innovative Centre of Excellence has created 
+				impeccable industry relevant scenarios to evangelize the suite of InfoSec & Compliance solutions using RSA technologies. 
+				Write to us, right away to know further.
+			</P>
+			<a href="https://www.rsa.com/">READ MORE</a>
+		</div>
+		<div class="sailpoint">
+			<div class="sailpoint-img card-5"></div>
+			<P>Proofpoint protects your people, data and brand against advanced threats and compliance risk. StarShield is partnered 
+				with ProofPoint to provide solutions related to Email Protection, Email Fraud Defense, Advanced Threat protection etc 
+				solutions. Please contact our expert teams to understand how we can help in securing your organization against frauds.
+
+			</P>
+			<a href="https://www.proofpoint.com/us">READ MORE</a>
+		</div>
+		<div class="sailpoint">
+			<div class="sailpoint-img card-6"></div>
+			<P>HYPERCLOUD is a cloud-native platform that brings the functionalities of SIEM, UEBA and SOAR into a single continuous to 
+				solve cybersecurity challenges at scale. DNIF HYPERCLOUD is the flagship SaaS platform from NETMONASTERY Security Pvt. 
+				Ltd. that delivers key detection functionalities using big data analytics and machine learning. </P>
+			<a href="https://www.dnif.it/en/">READ MORE</a>
+		</div>
+	</section>
+	</div><br><br><br><br>
+	
+	<!-- footer section-->
+	<div class="footer">
+        <br>
+        <h4>Follow Me</h4><br>
+
+		<div class="icon">
+			<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+			<a href=https://twitter.com/home><i class="fa fa-linkedin"></i></a>
+			<a href="#"><i class="fa fa-envelope"></i></a>
+			<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+			<a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+		</div><br>
+        <div class="copyright">NOTE : This page is created only for learning purpose.&nbsp; Content is taken from 
+			<a href="https://www.cm-alliance.com/cybersecurity-blog" class="copy-right-link">cm-alliance</a>
+		</div><br>
+        <p class="copyright">&copy; Copyright 2023 By Vishwadeep</p><br>
+		<button class="butt" type="button" onclick="startClock()">
+			Date and Time
+		</button><br>
+		
+		<div class="date_time_button" id="date_time_button"></div>
+		
+		<br>
+        <br>
+        </div>
+    </body>
+</html>

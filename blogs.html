@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>Blogs</title>
+	<link rel="stylesheet" href="css/blogs.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="menu-bar">
+		<a href="#"><img  src="images/e.png" class="img-logo"></a>
+	    <ul>		
+            <li class="active">
+                <a>BLOGS</a>
+                <i class="fa fa-book" aria-hidden="true"></i>
+            </li>		
+            <li class="contact-button">
+                <a href="contact.html">Contact Us</a>
+            </li>
+	    </ul>
+    </div>
+    
+    <br>
+    <br>
+    <section class="slidesection">
+        <div class="slider">
+            <div class="slider-container">
+                <div class="slider-video" >
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5JePitatwnk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="slider-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NoKHdJ4RGg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="slider-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iROT2UWseJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="slider-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wkpmlRPmtw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <button class="slider-button prev">&#10094;</button>
+            <button class="slider-button next">&#10095;</button>
+        </div>
+    </section>
+    <script>
+        const sliderContainer = document.querySelector('.slider-container');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        const videoWidth = 640;
+        const totalSlides = 4;
+        let slideIndex = 0;
+
+        prevButton.addEventListener('click', () => {
+            if (slideIndex === 0) {
+                slideIndex = totalSlides - 1;
+            } else {
+                slideIndex--;
+            }
+            sliderContainer.style.transform = `translateX(-${slideIndex * videoWidth}px)`;
+        });
+
+        nextButton.addEventListener('click', () => {
+            if (slideIndex === totalSlides - 1) {
+                slideIndex = 0;
+            } else {
+                slideIndex++;
+            }
+            sliderContainer.style.transform = `translateX(-${slideIndex * videoWidth}px)`;
+        });
+    </script>  
+</body>
+</html>
